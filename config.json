@@ -34,7 +34,7 @@
   "whiteListMode": {
     "enable": false,
     "whiteListIds": [
-      "61580644970976"
+      "61592891796221"
     ],
     "notes": "if you enable this feature, only the ids in the whiteListIds list can use the bot"
   },
