@@ -1,78 +1,137 @@
-module.exports = {
-  config: {
-    name: "kinn",
-    aliases: [],
-    version: "1.0.0",
-    author: "shtot",
-    countDown: 5,
-    role: 2,
-    category: "admin",
-    description: "تغيير كنية البوت في جميع الكروبات"
-  },
-
-  onStart: async function ({ api, event, args, threadsData }) {
-    const newNick = args.join(" ").trim();
-
-    if (!newNick) {
-      return api.sendMessage(
-        "❌ كتب الكنية اللي بغيتي.\n\nمثال:\nkinn Saad",
-        event.threadID
-      );
+[
+    {
+        "key": "dbln",
+        "value": "%7B%2261594311655386%22%3A%2232jLHr1v%22%7D",
+        "domain": "facebook.com",
+        "path": "/login/device-based/",
+        "hostOnly": false,
+        "creation": "2026-09-11T22:52:02.990Z",
+        "lastAccessed": "2026-09-11T22:52:02.990Z"
+    },
+    {
+        "key": "datr",
+        "value": "QRCkapep322ztsWWlClF1sf-",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-09-11T22:52:02.990Z",
+        "lastAccessed": "2026-09-11T22:52:02.990Z"
+    },
+    {
+        "key": "sb",
+        "value": "RBCkar0NDPB-TRxDcZnsYPS1",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-09-11T22:52:02.990Z",
+        "lastAccessed": "2026-09-11T22:52:02.990Z"
+    },
+    {
+        "key": "locale",
+        "value": "ar_AR",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-09-11T22:52:02.990Z",
+        "lastAccessed": "2026-09-11T22:52:02.990Z"
+    },
+    {
+        "key": "pas",
+        "value": "61594311655386%3At3hYxpdFsK",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-09-11T22:52:02.990Z",
+        "lastAccessed": "2026-09-11T22:52:02.990Z"
+    },
+    {
+        "key": "ps_l",
+        "value": "1",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-09-11T22:52:02.990Z",
+        "lastAccessed": "2026-09-11T22:52:02.990Z"
+    },
+    {
+        "key": "ps_n",
+        "value": "1",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-09-11T22:52:02.990Z",
+        "lastAccessed": "2026-09-11T22:52:02.990Z"
+    },
+    {
+        "key": "vpd",
+        "value": "v1%3B787x420x1.712499976158142",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-09-11T22:52:02.990Z",
+        "lastAccessed": "2026-09-11T22:52:02.990Z"
+    },
+    {
+        "key": "c_user",
+        "value": "61594311655386",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-09-11T22:52:02.990Z",
+        "lastAccessed": "2026-09-11T22:52:02.990Z"
+    },
+    {
+        "key": "xs",
+        "value": "26%3A0hCbtfmG22fTrQ%3A2%3A1789166972%3A-1%3A-1",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-09-11T22:52:02.990Z",
+        "lastAccessed": "2026-09-11T22:52:02.990Z"
+    },
+    {
+        "key": "m_pixel_ratio",
+        "value": "1.712499976158142",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-09-11T22:52:02.990Z",
+        "lastAccessed": "2026-09-11T22:52:02.990Z"
+    },
+    {
+        "key": "wd",
+        "value": "421x942",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-09-11T22:52:02.990Z",
+        "lastAccessed": "2026-09-11T22:52:02.990Z"
+    },
+    {
+        "key": "fr",
+        "value": "0Z63oGQirpmTq6d0H.AWcd08yCQCJ4mjaXA2IQN2NhrPoUidVU2aWH7P08TnP442hbS3I.BqpBBE..AAA.0.0.BqpIYE.AWc8zvqPLIJUBIzamVb1KDzIbNc",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-09-11T22:52:02.990Z",
+        "lastAccessed": "2026-09-11T22:52:02.990Z"
+    },
+    {
+        "key": "fbl_st",
+        "value": "100716557%3BT%3A29819451",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-09-11T22:52:02.990Z",
+        "lastAccessed": "2026-09-11T22:52:02.990Z"
+    },
+    {
+        "key": "wl_cbv",
+        "value": "v2%3Bclient_version%3A3281%3Btimestamp%3A1789167108",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2026-09-11T22:52:02.990Z",
+        "lastAccessed": "2026-09-11T22:52:02.990Z"
     }
-
-    try {
-      const threadList = await threadsData.getAll();
-
-      if (!threadList || threadList.length === 0) {
-        return api.sendMessage("❌ ما لقيتش الكروبات.", event.threadID);
-      }
-
-      const botID = api.getCurrentUserID();
-
-      let success = 0;
-      let failed = 0;
-
-      await api.sendMessage(
-        `🔄 جاري تغيير كنية البوت إلى: ${newNick}\n📌 الكروبات: ${threadList.length}`,
-        event.threadID
-      );
-
-      for (const thread of threadList) {
-        const threadID = thread.threadID;
-
-        try {
-          await new Promise((resolve) => {
-            api.changeNickname(
-              newNick,
-              threadID,
-              botID,
-              (err) => {
-                if (err) failed++;
-                else success++;
-                resolve();
-              }
-            );
-          });
-
-          await new Promise(resolve => setTimeout(resolve, 800));
-
-        } catch (e) {
-          failed++;
-        }
-      }
-
-      return api.sendMessage(
-        `✅ سالينا تغيير الكنية.\n\n👤 الكنية: ${newNick}\n✅ نجحات: ${success}\n❌ فشلات: ${failed}`,
-        event.threadID
-      );
-
-    } catch (error) {
-      console.error("KINN ERROR:", error);
-
-      return api.sendMessage(
-        "❌ وقع خطأ أثناء محاولة تغيير الكنية.",
-        event.threadID
-      );
-    }
-  }
-};
+]
